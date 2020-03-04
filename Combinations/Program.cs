@@ -23,23 +23,15 @@ namespace Combinations
             {
                 Print(a, m);
             }
-            Console.Read();
-            Console.Read();
-            
-
         }
         private static void Print(int[] a, int n)
         {
-            //C++ TO C# CONVERTER NOTE: This static local variable declaration (not allowed in C#) has been moved just prior to the method:
-            //  static int num = 1;
-            Console.Write("{0,3}", Print_num++);
-            Console.Write("{0,3}", ":  ");
+            Console.Write($"{ Print_num++}:  ");
             for (int i = 0; i < n; i++)
             {
-                Console.Write("{0,3}", a[i]);
-                Console.Write("{0,3}", " ");
+                Console.Write($"{a[i]} ");
             }
-            Console.Write("{0,3}", "\n");
+            Console.WriteLine();
         }
 
         private static bool NextSet(int[] a, int n, int m)
